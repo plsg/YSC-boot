@@ -1,0 +1,97 @@
+// ======= colors ============
+	@black: 	#1f1f1f;
+	@gray: 		#6f6f6f;
+	@white: 	#eee;
+	@yellow: 	#f3bf4e;
+
+	@purple: 	#7d6fac;
+	@blue: 		#405baa;
+	@green: 	#68c375;
+	@red: 		#da3427;
+	@aqua: 		#61b4bb;
+	@drkbrown: 	#3B3530;
+
+
+// ------ /end colors --------
+
+// =========== background ==============
+	html {
+		background: url(../img/fabric_1.png);
+		color: @black;
+		height: 100%;
+	}
+	body {
+		background-color: fade(@yellow, 10%);
+		height: 100%;
+		display: block;
+	}
+// -------- /end background ------------
+
+
+// =========== custom navbar ============
+
+
+.navbar-default {
+	background-color: @drkbrown;
+	border: none;
+	/* Small devices (tablets, 768px and up) */
+	@media (min-width: @screen-sm-min) {
+		background-color: transparent;
+	}
+
+	.container-fluid {
+	}
+
+	a.navbar-brand {
+		margin-right: 30px;
+		padding-top: 5px;
+		.text-hide();
+		/* Small devices (tablets, 768px and up) */
+		@media (min-width: @screen-sm-min) {
+			padding-top: 15px;
+		}
+		img {
+			.img-responsive();
+			max-width: 50px;
+			/* Small devices (tablets, 768px and up) */
+			@media (min-width: @screen-sm-min) {
+				max-width: 100px;
+			}
+		}
+	}
+
+	.navbar-collapse {
+		background-color: lighten(@drkbrown, 50%);
+		/* Small devices (tablets, 768px and up) */
+		@media (min-width: @screen-sm-min) {
+			background-color: transparent;
+		}
+	}
+
+	ul.nav.navbar-nav {
+		/* Small devices (tablets, 768px and up) */
+		@media (min-width: @screen-sm-min) {
+			padding-top: 30px;
+		}
+		&:first-child {
+			a {
+				text-transform: uppercase;
+			}
+		}
+		&:last-child {
+			width: 20%;
+			li {
+				.make-sm-column(12);
+				a {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+// -------- /end custom navbar ----------
