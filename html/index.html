@@ -3,61 +3,132 @@
 <head>
 	<meta charset="UTF-8">
 	<title>OIYSC-static-mockup</title>
-	<link rel="stylesheet" href="../css/custom-bootstrap.css">
-	<script src="../js/jquery.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/custom-bootstrap.css">
 </head>
 <body>
 
-
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="../img/OIYSC-logo.png">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">News</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">How we serve<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">International</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Calendar<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Meetings</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Shop</a></li>
-      </ul>
-<!--       <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+  <!-- navbar -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../img/OIYSC-logo.png">Brand</a>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> -->
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">donate</a></li>
-        <li><a href="#">about us</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-	
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">News</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">How we serve<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">International</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Calendar<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Meetings</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+    <!--       <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form> -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">donate</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  <!-- /end navbar -->
+
+  <!-- bootstrap carousel -->
+    <div id="mainCarousel" class="carousel slide container" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+        <li data-target="#mainCarousel" data-slide-to="2"></li>
+        <li data-target="#mainCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="../img/carousel/football-kids2.jpg" alt="football">
+          <div class="carousel-caption">
+            <h1>Ducimus voluptatum fuga laboriosam officiis sapiente!</h1>
+            <p>Lorem consectetur adipisicing elit. Hic, obcaecati ut accusantium! Delectus, obcaecati consectetur adipisicing elit. Sed, exercitationem omnis placeat cumque rem consequuntur.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="../img/carousel/lin_2.jpg" alt="drawing">
+          <div class="carousel-caption">
+            <h1>Hic, obcaecati ut accusantium!</h1>
+            <p>Sed, exercitationem omnis placeat cumque rem consequuntur at ducimus molestiae voluptatum fuga laboriosam officiis autem officia illum pariatur facere vero consequatur</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="../img/carousel/irene2.jpg" alt="drawing">
+          <div class="carousel-caption">
+            <h1>Placeat elit consectetur...</h1>
+            <p>Omnis placeat cumque rem consequuntur at ducimus molestiae voluptatum fuga laboriosam officiis Hic, obcaecati ut accusantium! Delectus, obcaecati consectetur adipisicing elit. Sed, exercitationem oautem officia illum pariatur facere vero consequatur sapiente!</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="../img/carousel/SOSchildren-2.jpg" alt="students">
+          <div class="carousel-caption">
+            <h1>Ducimus voluptatum fuga laboriosam officiis sapiente!</h1>
+            <p>Lorem consectetur adipisicing elit. Hic, obcaecati ut accusantium! Delectus, obcaecati consectetur adipisicing elit. Sed, exercitationem omnis placeat cumque rem consequuntur.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  <!-- /end bootstrap carousel -->
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/jquery.js"><\/script>')</script>
+  <script src="../js/bootstrap.min.js"></script>
+<!-- 
+  <script>
+    $(function(){
+      $('#mainCarousel').carousel();
+    });
+  </script>
+
+ -->
+  
 </body>
 </html>

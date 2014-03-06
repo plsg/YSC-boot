@@ -5691,16 +5691,6 @@ button.close {
     display: none !important;
   }
 }
-html {
-  background: url(../img/fabric_1.png);
-  color: #1f1f1f;
-  height: 100%;
-}
-body {
-  background-color: rgba(243, 191, 78, 0.1);
-  height: 100%;
-  display: block;
-}
 .navbar-default {
   background-color: #3b3530;
   border: none;
@@ -5776,6 +5766,21 @@ body {
 .navbar-default ul.nav.navbar-nav:last-child li a {
   padding-top: 0;
   padding-bottom: 0;
+}
+#carousel-landing div.carousel-inner div.item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+html {
+  background: url(../img/fabric_1.png);
+  color: #1f1f1f;
+  height: 100%;
+}
+body {
+  background-color: rgba(243, 191, 78, 0.1);
+  height: 100%;
+  display: block;
 }
 .clearfix:before,
 .clearfix:after,
