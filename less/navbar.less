@@ -4,6 +4,8 @@
 .navbar-default {
 	background-color: @drkbrown;
 	border: none;
+	
+
 	/* Small devices (tablets, 768px and up) */
 	@media (min-width: @screen-sm-min) {
 		background-color: transparent;
@@ -43,21 +45,27 @@
 		@media (min-width: @screen-sm-min) {
 			padding-top: 30px;
 		}
-		&:first-child {
-			a {
-				text-transform: uppercase;
-			}
+
+		// styles for top menu
+		a {
+			font-family: 'blokletters_balpen';
+			text-transform: uppercase;
+			color: @drkbrown;
 		}
-		&:last-child {
+
+		// small menu top right
+		&.navbar-right {
 			width: 20%;
 			li {
 				.make-sm-column(12);
 				a {
+					text-transform: lowercase;
 					padding-top: 0;
 					padding-bottom: 0;
 				}
 			}
 		}
+
 	}
 
 }
